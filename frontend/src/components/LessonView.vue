@@ -27,6 +27,9 @@
     <!-- Vocabulary Section -->
     <div v-if="activeTab === 'vocabulary'" class="vocabulary-section">
       <div v-for="(word, index) in lesson.vocabulary" :key="index" class="vocab-card">
+        <button @click="pronounce(word.spanish)" class="speaker-btn" title="Listen to pronunciation">
+          🔊
+        </button>
         <div class="vocab-spanish">{{ word.spanish }}</div>
         <div class="vocab-pronunciation">{{ word.pronunciation }}</div>
         <div class="vocab-english">{{ word.english }}</div>
@@ -160,6 +163,23 @@ export default {
       this.score = 0
       this.quizCompleted = false
       this.answers = []
+    },
+    pronounce(text) {
+      // Use Web Speech API for text-to-speech
+      if ('speechSynthesis' in window) {
+        // Cancel any ongoing speech
+        window.speechSynthesis.cancel()
+
+        const utterance = new SpeechSynthesisUtterance(text)
+        utterance.lang = 'es-ES' // Spanish language
+        utterance.rate = 0.8 // Slightly slower for learning
+        utterance.pitch = 1
+
+        window.speechSynthesis.speak(utterance)
+      } else {
+        console.warn('Text-to-speech not supported in this browser')
+        alert('Audio pronunciation not supported in your browser. Please try Chrome, Edge, or Safari.')
+      }
     }
   }
 }
@@ -251,10 +271,35 @@ export default {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s;
+  position: relative;
 }
 .vocab-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.speaker-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+.speaker-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.6);
+}
+.speaker-btn:active {
+  transform: scale(0.95);
 }
 .vocab-spanish {
   font-size: 2rem;

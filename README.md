@@ -18,9 +18,10 @@ A self-hosted language learning platform for learning Spanish, built with Vue.js
   - Family Members
 
 - **Interactive Learning**:
-  - Vocabulary cards with pronunciations
+  - Vocabulary cards with text and audio pronunciations (click 🔊 to hear!)
   - Practice quizzes with instant feedback
   - Score tracking for each lesson
+  - Text-to-speech pronunciation using Web Speech API
 
 - **User System**:
   - User registration and authentication
@@ -215,11 +216,12 @@ The landing page includes:
 - [ ] User authentication with JWT tokens
 - [ ] Progress tracking for completed lessons
 - [ ] Spaced repetition algorithm for vocabulary review
-- [ ] Audio pronunciations
+- [x] ~~Audio pronunciations~~ ✅ **Completed!** (Click 🔊 on vocabulary cards)
 - [ ] More advanced lessons (intermediate and advanced levels)
 - [ ] Writing exercises
 - [ ] Conversation practice scenarios
 - [ ] Leaderboard and achievements
+- [ ] Record user pronunciation and compare with native speech
 
 ## Contributing
 
