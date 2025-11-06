@@ -2,7 +2,7 @@
 
 A self-hosted language learning platform for learning Spanish, built with Vue.js and FastAPI.
 
-**🌐 [Visit our Landing Page](https://your-vercel-url.vercel.app)** | **🤝 [Contribute](https://github.com/yourusername/language-learning-web)**
+**🌐 [Visit our Landing Page](https://language-learning-web-five.vercel.app/)** | **🤝 [Contribute](https://github.com/thelonewolf39/language-learning-web)**
 
 > The landing page is hosted at the root of this repo and deploys automatically to Vercel!
 
@@ -39,7 +39,7 @@ A self-hosted language learning platform for learning Spanish, built with Vue.js
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/thelonewolf39/Language-Learning-web.git
 cd Language-Learning-web
 ```
 
