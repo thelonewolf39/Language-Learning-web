@@ -1,0 +1,21 @@
+{
+  "name": "language-learning-web-landing",
+  "version": "1.0.0",
+  "description": "Landing page for Language Learning Web project",
+  "scripts": {
+    "dev": "npx serve public",
+    "build": "echo 'No build needed - static site'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "spanish",
+    "language-learning",
+    "education",
+    "open-source"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

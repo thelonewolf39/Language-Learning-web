@@ -1,0 +1,14 @@
+node_modules
+.git
+.gitignore
+package-lock.json
+
+# Exclude application directories (not part of landing page)
+frontend/
+backend/
+website/
+
+# Docker files
+docker-compose.yml
+Dockerfile
+.dockerignore

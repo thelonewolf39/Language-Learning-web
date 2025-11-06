@@ -1,0 +1,23 @@
+{
+  "name": "language-learning-web",
+  "version": "1.0.0",
+  "description": "Open-source Spanish learning platform with interactive lessons and quizzes",
+  "scripts": {
+    "dev:landing": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "spanish",
+    "language-learning",
+    "education",
+    "open-source",
+    "vue",
+    "fastapi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/language-learning-web"
+  },
+  "author": "",
+  "license": "MIT"
+}
