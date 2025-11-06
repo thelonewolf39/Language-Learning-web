@@ -42,6 +42,12 @@
         <h2>Login</h2>
         <input v-model="loginData.username" placeholder="Username" autocomplete="username" autocapitalize="none" @keyup.enter="login">
         <input v-model="loginData.password" type="password" placeholder="Password" autocomplete="current-password" @keyup.enter="login">
+        <div class="remember-me">
+          <label>
+            <input type="checkbox" v-model="rememberMe">
+            <span>Remember me</span>
+          </label>
+        </div>
         <button @click="login" :disabled="loading">{{ loading ? 'Loading...' : 'Login' }}</button>
         <hr>
         <h2>Register</h2>
@@ -141,6 +147,7 @@ export default {
       currentView: 'lessons',
       registerData: { username: '', password: '' },
       loginData: { username: '', password: '' },
+      rememberMe: true,
       loading: false,
       error: null,
       success: null,
@@ -148,9 +155,14 @@ export default {
     }
   },
   async mounted() {
-    // Check for stored auth token
-    const storedToken = localStorage.getItem('authToken')
-    const storedUser = localStorage.getItem('user')
+    // Check for stored auth token in both localStorage and sessionStorage
+    let storedToken = localStorage.getItem('authToken')
+    let storedUser = localStorage.getItem('user')
+
+    if (!storedToken) {
+      storedToken = sessionStorage.getItem('authToken')
+      storedUser = sessionStorage.getItem('user')
+    }
 
     if (storedToken && storedUser) {
       this.authToken = storedToken
@@ -208,9 +220,10 @@ export default {
         this.authToken = data.access_token
         this.user = data.user
 
-        // Store in localStorage
-        localStorage.setItem('authToken', this.authToken)
-        localStorage.setItem('user', JSON.stringify(this.user))
+        // Store in localStorage or sessionStorage based on "Remember me"
+        const storage = this.rememberMe ? localStorage : sessionStorage
+        storage.setItem('authToken', this.authToken)
+        storage.setItem('user', JSON.stringify(this.user))
 
         // Load lessons
         await this.loadLessons()
@@ -235,13 +248,15 @@ export default {
         console.error('Logout error:', err)
       }
 
-      // Clear local data
+      // Clear local data from both storages
       this.user = null
       this.authToken = null
       this.lessons = []
       this.currentView = 'lessons'
       localStorage.removeItem('authToken')
       localStorage.removeItem('user')
+      sessionStorage.removeItem('authToken')
+      sessionStorage.removeItem('user')
     },
 
     async loadLessons() {
@@ -259,13 +274,17 @@ export default {
 
     updateUserPoints(newPoints) {
       this.user.total_points = newPoints
-      localStorage.setItem('user', JSON.stringify(this.user))
+      // Update whichever storage is currently in use
+      const storage = localStorage.getItem('authToken') ? localStorage : sessionStorage
+      storage.setItem('user', JSON.stringify(this.user))
     },
 
     updateUserAvatar({ style, seed }) {
       this.user.avatar_style = style
       this.user.avatar_seed = seed
-      localStorage.setItem('user', JSON.stringify(this.user))
+      // Update whichever storage is currently in use
+      const storage = localStorage.getItem('authToken') ? localStorage : sessionStorage
+      storage.setItem('user', JSON.stringify(this.user))
     },
 
     getIdenticon(username) {
@@ -446,6 +465,31 @@ export default {
   background: #9ca3af;
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.remember-me label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.remember-me input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0;
+  accent-color: #2563eb;
+}
+.remember-me span {
+  color: #374151;
+  font-size: 0.95rem;
 }
 
 /* Error and Success Messages */
