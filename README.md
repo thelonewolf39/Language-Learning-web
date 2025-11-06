@@ -182,6 +182,34 @@ Each lesson includes:
 - **Vocabulary** - Spanish words with English translations and pronunciations
 - **Exercises** - Multiple-choice quizzes to test knowledge
 
+## Landing Page Deployment
+
+The project includes a beautiful landing page at the root (`index.html`) that explains the project and welcomes contributors.
+
+### Deploy to Vercel
+
+1. **Via Vercel Dashboard:**
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Deploy with default settings
+   - Done! Your landing page is live
+
+2. **Via Vercel CLI:**
+   ```bash
+   npm install -g vercel
+   vercel
+   ```
+
+3. **Automatic Deployment:**
+   - Connect your GitHub repo to Vercel
+   - Every push to main deploys automatically
+
+The landing page includes:
+- Project overview and features
+- Complete setup instructions
+- Tech stack details
+- Contribution guidelines
+
 ## Future Enhancements
 
 - [ ] User authentication with JWT tokens
@@ -195,7 +223,24 @@ Each lesson includes:
 
 ## Contributing
 
-Feel free to submit issues and pull requests to improve the platform!
+We welcome contributions from developers, designers, and language experts!
+
+**Ways to contribute:**
+- Add more lessons and vocabulary
+- Implement new features
+- Improve UI/UX design
+- Fix bugs and improve performance
+- Write documentation
+- Translate to other languages
+
+**How to start:**
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+Check out our [landing page](index.html) for more details on contributing!
 
 ## License
 
