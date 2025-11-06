@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "title": "Basic Greetings",
+    "description": "Learn essential Spanish greetings and introductions",
+    "difficulty": "beginner",
+    "vocabulary": [
+      {"spanish": "Hola", "english": "Hello", "pronunciation": "OH-lah"},
+      {"spanish": "Buenos días", "english": "Good morning", "pronunciation": "BWEH-nos DEE-as"},
+      {"spanish": "Buenas tardes", "english": "Good afternoon", "pronunciation": "BWEH-nas TAR-des"},
+      {"spanish": "Buenas noches", "english": "Good evening/night", "pronunciation": "BWEH-nas NOH-ches"},
+      {"spanish": "Adiós", "english": "Goodbye", "pronunciation": "ah-DYOHS"},
+      {"spanish": "Hasta luego", "english": "See you later", "pronunciation": "AHS-tah LWEH-goh"},
+      {"spanish": "¿Cómo estás?", "english": "How are you?", "pronunciation": "KOH-moh es-TAHS"},
+      {"spanish": "Bien, gracias", "english": "Fine, thank you", "pronunciation": "BYEN, GRAH-syahs"},
+      {"spanish": "Por favor", "english": "Please", "pronunciation": "por fah-VOR"},
+      {"spanish": "Gracias", "english": "Thank you", "pronunciation": "GRAH-syahs"}
+    ],
+    "exercises": [
+      {"question": "How do you say 'Hello' in Spanish?", "answer": "Hola", "options": ["Hola", "Adiós", "Gracias", "Por favor"]},
+      {"question": "What does 'Buenos días' mean?", "answer": "Good morning", "options": ["Good morning", "Good night", "Goodbye", "Thank you"]},
+      {"question": "How do you say 'Thank you' in Spanish?", "answer": "Gracias", "options": ["Por favor", "Adiós", "Gracias", "Hola"]},
+      {"question": "What does '¿Cómo estás?' mean?", "answer": "How are you?", "options": ["How are you?", "Goodbye", "Good morning", "Please"]},
+      {"question": "How do you say 'See you later' in Spanish?", "answer": "Hasta luego", "options": ["Hasta luego", "Buenas noches", "Buenos días", "Adiós"]}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Numbers 1-20",
+    "description": "Master Spanish numbers from one to twenty",
+    "difficulty": "beginner",
+    "vocabulary": [
+      {"spanish": "uno", "english": "one", "pronunciation": "OO-noh"},
+      {"spanish": "dos", "english": "two", "pronunciation": "dohs"},
+      {"spanish": "tres", "english": "three", "pronunciation": "trehs"},
+      {"spanish": "cuatro", "english": "four", "pronunciation": "KWAH-troh"},
+      {"spanish": "cinco", "english": "five", "pronunciation": "SEEN-koh"},
+      {"spanish": "seis", "english": "six", "pronunciation": "says"},
+      {"spanish": "siete", "english": "seven", "pronunciation": "SYEH-teh"},
+      {"spanish": "ocho", "english": "eight", "pronunciation": "OH-choh"},
+      {"spanish": "nueve", "english": "nine", "pronunciation": "NWEH-veh"},
+      {"spanish": "diez", "english": "ten", "pronunciation": "dyehs"},
+      {"spanish": "once", "english": "eleven", "pronunciation": "OHN-seh"},
+      {"spanish": "doce", "english": "twelve", "pronunciation": "DOH-seh"},
+      {"spanish": "trece", "english": "thirteen", "pronunciation": "TREH-seh"},
+      {"spanish": "catorce", "english": "fourteen", "pronunciation": "kah-TOR-seh"},
+      {"spanish": "quince", "english": "fifteen", "pronunciation": "KEEN-seh"},
+      {"spanish": "dieciséis", "english": "sixteen", "pronunciation": "dyeh-see-SAYS"},
+      {"spanish": "diecisiete", "english": "seventeen", "pronunciation": "dyeh-see-SYEH-teh"},
+      {"spanish": "dieciocho", "english": "eighteen", "pronunciation": "dyeh-see-OH-choh"},
+      {"spanish": "diecinueve", "english": "nineteen", "pronunciation": "dyeh-see-NWEH-veh"},
+      {"spanish": "veinte", "english": "twenty", "pronunciation": "VAYN-teh"}
+    ],
+    "exercises": [
+      {"question": "What is 'five' in Spanish?", "answer": "cinco", "options": ["cinco", "cuatro", "seis", "siete"]},
+      {"question": "What does 'diez' mean?", "answer": "ten", "options": ["ten", "nine", "eleven", "twelve"]},
+      {"question": "How do you say 'fifteen' in Spanish?", "answer": "quince", "options": ["quince", "catorce", "dieciséis", "trece"]},
+      {"question": "What is 'three' in Spanish?", "answer": "tres", "options": ["tres", "dos", "cuatro", "uno"]},
+      {"question": "What does 'veinte' mean?", "answer": "twenty", "options": ["twenty", "twelve", "two", "ten"]}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Common Foods",
+    "description": "Learn Spanish words for everyday foods and drinks",
+    "difficulty": "beginner",
+    "vocabulary": [
+      {"spanish": "agua", "english": "water", "pronunciation": "AH-gwah"},
+      {"spanish": "pan", "english": "bread", "pronunciation": "pahn"},
+      {"spanish": "leche", "english": "milk", "pronunciation": "LEH-cheh"},
+      {"spanish": "café", "english": "coffee", "pronunciation": "kah-FEH"},
+      {"spanish": "té", "english": "tea", "pronunciation": "teh"},
+      {"spanish": "carne", "english": "meat", "pronunciation": "KAR-neh"},
+      {"spanish": "pollo", "english": "chicken", "pronunciation": "POH-yoh"},
+      {"spanish": "pescado", "english": "fish", "pronunciation": "pes-KAH-doh"},
+      {"spanish": "fruta", "english": "fruit", "pronunciation": "FROO-tah"},
+      {"spanish": "verdura", "english": "vegetable", "pronunciation": "ver-DOO-rah"},
+      {"spanish": "arroz", "english": "rice", "pronunciation": "ah-ROHS"},
+      {"spanish": "huevo", "english": "egg", "pronunciation": "WEH-voh"}
+    ],
+    "exercises": [
+      {"question": "How do you say 'water' in Spanish?", "answer": "agua", "options": ["agua", "leche", "café", "té"]},
+      {"question": "What does 'pan' mean?", "answer": "bread", "options": ["bread", "meat", "milk", "egg"]},
+      {"question": "How do you say 'chicken' in Spanish?", "answer": "pollo", "options": ["pollo", "pescado", "carne", "huevo"]},
+      {"question": "What is 'fruit' in Spanish?", "answer": "fruta", "options": ["fruta", "verdura", "arroz", "pan"]},
+      {"question": "What does 'café' mean?", "answer": "coffee", "options": ["coffee", "tea", "milk", "water"]}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Colors",
+    "description": "Learn all the colors of the rainbow in Spanish",
+    "difficulty": "beginner",
+    "vocabulary": [
+      {"spanish": "rojo", "english": "red", "pronunciation": "ROH-hoh"},
+      {"spanish": "azul", "english": "blue", "pronunciation": "ah-SOOL"},
+      {"spanish": "amarillo", "english": "yellow", "pronunciation": "ah-mah-REE-yoh"},
+      {"spanish": "verde", "english": "green", "pronunciation": "VER-deh"},
+      {"spanish": "negro", "english": "black", "pronunciation": "NEH-groh"},
+      {"spanish": "blanco", "english": "white", "pronunciation": "BLAHN-koh"},
+      {"spanish": "naranja", "english": "orange", "pronunciation": "nah-RAHN-hah"},
+      {"spanish": "morado", "english": "purple", "pronunciation": "moh-RAH-doh"},
+      {"spanish": "rosa", "english": "pink", "pronunciation": "ROH-sah"},
+      {"spanish": "gris", "english": "gray", "pronunciation": "grees"},
+      {"spanish": "marrón", "english": "brown", "pronunciation": "mah-ROHN"}
+    ],
+    "exercises": [
+      {"question": "How do you say 'red' in Spanish?", "answer": "rojo", "options": ["rojo", "rosa", "naranja", "morado"]},
+      {"question": "What does 'azul' mean?", "answer": "blue", "options": ["blue", "green", "yellow", "black"]},
+      {"question": "How do you say 'yellow' in Spanish?", "answer": "amarillo", "options": ["amarillo", "blanco", "verde", "naranja"]},
+      {"question": "What is 'purple' in Spanish?", "answer": "morado", "options": ["morado", "rosa", "rojo", "azul"]},
+      {"question": "What does 'verde' mean?", "answer": "green", "options": ["green", "gray", "brown", "white"]}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Family Members",
+    "description": "Learn how to talk about your family in Spanish",
+    "difficulty": "beginner",
+    "vocabulary": [
+      {"spanish": "familia", "english": "family", "pronunciation": "fah-MEE-lyah"},
+      {"spanish": "padre", "english": "father", "pronunciation": "PAH-dreh"},
+      {"spanish": "madre", "english": "mother", "pronunciation": "MAH-dreh"},
+      {"spanish": "hermano", "english": "brother", "pronunciation": "er-MAH-noh"},
+      {"spanish": "hermana", "english": "sister", "pronunciation": "er-MAH-nah"},
+      {"spanish": "hijo", "english": "son", "pronunciation": "EE-hoh"},
+      {"spanish": "hija", "english": "daughter", "pronunciation": "EE-hah"},
+      {"spanish": "abuelo", "english": "grandfather", "pronunciation": "ah-BWEH-loh"},
+      {"spanish": "abuela", "english": "grandmother", "pronunciation": "ah-BWEH-lah"},
+      {"spanish": "tío", "english": "uncle", "pronunciation": "TEE-oh"},
+      {"spanish": "tía", "english": "aunt", "pronunciation": "TEE-ah"},
+      {"spanish": "primo", "english": "cousin (male)", "pronunciation": "PREE-moh"},
+      {"spanish": "prima", "english": "cousin (female)", "pronunciation": "PREE-mah"}
+    ],
+    "exercises": [
+      {"question": "How do you say 'mother' in Spanish?", "answer": "madre", "options": ["madre", "padre", "hermana", "tía"]},
+      {"question": "What does 'hermano' mean?", "answer": "brother", "options": ["brother", "sister", "son", "uncle"]},
+      {"question": "How do you say 'grandfather' in Spanish?", "answer": "abuelo", "options": ["abuelo", "abuela", "tío", "padre"]},
+      {"question": "What is 'daughter' in Spanish?", "answer": "hija", "options": ["hija", "hijo", "hermana", "prima"]},
+      {"question": "What does 'familia' mean?", "answer": "family", "options": ["family", "father", "mother", "brother"]}
+    ]
+  }
+]
