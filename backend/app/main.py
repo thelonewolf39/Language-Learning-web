@@ -237,6 +237,15 @@ def get_user_achievements_api(
     achievements = crud.get_user_achievements(db, current_user.id)
     return achievements
 
+@app.get("/api/v1/achievements/me", response_model=List[schemas.AchievementResponse])
+def get_my_achievements(
+    current_user: models.User = Depends(get_current_user_from_session),
+    db: Session = Depends(get_db)
+):
+    """Get all achievements earned by authenticated user (requires session login)"""
+    achievements = crud.get_user_achievements(db, current_user.id)
+    return achievements
+
 # ==================== User Statistics ====================
 
 @app.get("/api/v1/stats", response_model=schemas.UserStatsResponse)
